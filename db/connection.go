@@ -3,7 +3,8 @@ package db
 import (
 	"database/sql"
 	"fmt"
-	"github/api-postgres/configs"
+	"github.com/igorfarodrigues/api-postgres/configs"
+	_"github.com/lib/pq"
 )
 
 func OpenConnection() (*sql.DB, error) {
