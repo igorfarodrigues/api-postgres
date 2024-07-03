@@ -1,0 +1,9 @@
+[api]
+port = "8081"
+
+[database]
+host = "localhost"
+port = "5432"   # Corrigido para a porta correta do PostgreSQL
+user = "user_todo"
+pass = "1122"
+name = "api_todo"
