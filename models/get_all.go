@@ -2,7 +2,7 @@ package models
 
 import "github.com/igorfarodrigues/api-postgres/db"
 
-func GetAll(id int64) (todos []Todo, err error) {
+func GetAll() (todos []Todo, err error) {
 	conn, err := db.OpenConnection()
 	if err != nil {
 		return
