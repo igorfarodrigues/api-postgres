@@ -22,7 +22,7 @@ type DBConfig struct {
 }
 
 func init() {
-	viper.SetDefault("api.port", "9000")
+	viper.SetDefault("api.port", "8081")
 	viper.SetDefault("database.host", "localhost")
 	viper.SetDefault("database.port", "5432")
 }
@@ -33,7 +33,7 @@ func Load() error {
 	viper.AddConfigPath(".")
 	err := viper.ReadInConfig()
 	if err != nil {
-		if _, ok := err.(viper.ConfigFileAlreadyExistsError); !ok {
+		if _, ok := err.(viper.ConfigFileNotFoundError); !ok {
 			return err
 		}
 	}
