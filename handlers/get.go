@@ -2,11 +2,11 @@ package handlers
 
 import (
 	"encoding/json"
+	"github.com/go-chi/chi/v5"
+	"github.com/igorfarodrigues/api-postgres/models"
 	"log"
 	"net/http"
 	"strconv"
-
-	"github.com/igorfarodrigues/api-postgres/models"
 )
 
 func Get(w http.ResponseWriter, r *http.Request) {

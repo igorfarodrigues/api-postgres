@@ -3,11 +3,11 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/go-chi/chi/v5"
+	"github.com/igorfarodrigues/api-postgres/models"
 	"log"
 	"net/http"
 	"strconv"
-
-	"github.com/igorfarodrigues/api-postgres/models"
 )
 
 func Delete(w http.ResponseWriter, r *http.Request) {
